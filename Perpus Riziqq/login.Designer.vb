@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class login
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class Login
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,113 +20,104 @@ Partial Class login
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.TBEmail = New System.Windows.Forms.TextBox()
+        Me.TBPassword = New System.Windows.Forms.TextBox()
+        Me.BtnLogin = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.usernameField = New System.Windows.Forms.TextBox()
-        Me.passwordField = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.LinkRegister = New System.Windows.Forms.LinkLabel()
         Me.SuspendLayout()
+        '
+        'TBEmail
+        '
+        Me.TBEmail.Location = New System.Drawing.Point(80, 167)
+        Me.TBEmail.Name = "TBEmail"
+        Me.TBEmail.Size = New System.Drawing.Size(208, 22)
+        Me.TBEmail.TabIndex = 0
+        '
+        'TBPassword
+        '
+        Me.TBPassword.Location = New System.Drawing.Point(80, 237)
+        Me.TBPassword.Name = "TBPassword"
+        Me.TBPassword.Size = New System.Drawing.Size(208, 22)
+        Me.TBPassword.TabIndex = 1
+        Me.TBPassword.UseSystemPasswordChar = True
+        '
+        'BtnLogin
+        '
+        Me.BtnLogin.Location = New System.Drawing.Point(80, 299)
+        Me.BtnLogin.Name = "BtnLogin"
+        Me.BtnLogin.Size = New System.Drawing.Size(208, 27)
+        Me.BtnLogin.TabIndex = 2
+        Me.BtnLogin.Text = "Sign In"
+        Me.BtnLogin.UseVisualStyleBackColor = True
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(188, 22)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.Label1.Location = New System.Drawing.Point(77, 148)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(72, 24)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "LOGIN"
+        Me.Label1.Size = New System.Drawing.Size(46, 17)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "Email:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label2.Location = New System.Drawing.Point(16, 98)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(144, 64)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(73, 17)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Username"
-        '
-        'usernameField
-        '
-        Me.usernameField.Location = New System.Drawing.Point(145, 90)
-        Me.usernameField.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.usernameField.Name = "usernameField"
-        Me.usernameField.Size = New System.Drawing.Size(235, 22)
-        Me.usernameField.TabIndex = 2
-        '
-        'passwordField
-        '
-        Me.passwordField.Location = New System.Drawing.Point(145, 138)
-        Me.passwordField.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.passwordField.Name = "passwordField"
-        Me.passwordField.Size = New System.Drawing.Size(235, 22)
-        Me.passwordField.TabIndex = 4
-        Me.passwordField.UseSystemPasswordChar = True
+        Me.Label2.Size = New System.Drawing.Size(85, 32)
+        Me.Label2.TabIndex = 4
+        Me.Label2.Text = "Login"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label3.Location = New System.Drawing.Point(16, 146)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(77, 218)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(69, 17)
-        Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Password"
+        Me.Label3.Size = New System.Drawing.Size(70, 16)
+        Me.Label3.TabIndex = 5
+        Me.Label3.Text = "Password:"
         '
-        'Button1
+        'LinkRegister
         '
-        Me.Button1.Location = New System.Drawing.Point(281, 209)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(100, 28)
-        Me.Button1.TabIndex = 5
-        Me.Button1.Text = "Masuk"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.LinkRegister.AutoSize = True
+        Me.LinkRegister.Location = New System.Drawing.Point(212, 148)
+        Me.LinkRegister.Name = "LinkRegister"
+        Me.LinkRegister.Size = New System.Drawing.Size(76, 16)
+        Me.LinkRegister.TabIndex = 6
+        Me.LinkRegister.TabStop = True
+        Me.LinkRegister.Text = "Create one!"
         '
-        'LinkLabel1
-        '
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(16, 215)
-        Me.LinkLabel1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(85, 17)
-        Me.LinkLabel1.TabIndex = 6
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "Create one !"
-        '
-        'login
+        'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(441, 252)
-        Me.Controls.Add(Me.LinkLabel1)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.passwordField)
+        Me.ClientSize = New System.Drawing.Size(364, 402)
+        Me.Controls.Add(Me.LinkRegister)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.usernameField)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Name = "login"
-        Me.Text = "login"
+        Me.Controls.Add(Me.BtnLogin)
+        Me.Controls.Add(Me.TBPassword)
+        Me.Controls.Add(Me.TBEmail)
+        Me.Name = "Login"
+        Me.Text = "Login"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
+    Friend WithEvents TBEmail As TextBox
+    Friend WithEvents TBPassword As TextBox
+    Friend WithEvents BtnLogin As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents usernameField As TextBox
-    Friend WithEvents passwordField As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents LinkRegister As LinkLabel
 End Class

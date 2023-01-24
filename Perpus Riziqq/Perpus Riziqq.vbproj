@@ -112,16 +112,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CollectionSkeleton.vb" />
-    <Compile Include="login.Designer.vb">
-      <DependentUpon>login.vb</DependentUpon>
+    <Compile Include="DeleteKoleksi.Designer.vb">
+      <DependentUpon>DeleteKoleksi.vb</DependentUpon>
     </Compile>
-    <Compile Include="login.vb">
+    <Compile Include="DeleteKoleksi.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="register.Designer.vb">
-      <DependentUpon>register.vb</DependentUpon>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
     </Compile>
-    <Compile Include="register.vb">
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.vb">
+      <DependentUpon>Register.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Register.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="showKoleksi.Designer.vb">
@@ -165,14 +171,17 @@
     <Compile Include="updateKoleksi.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserSkeleton.vb" />
+    <Compile Include="User.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="login.resx">
-      <DependentUpon>login.vb</DependentUpon>
+    <EmbeddedResource Include="DeleteKoleksi.resx">
+      <DependentUpon>DeleteKoleksi.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="register.resx">
-      <DependentUpon>register.vb</DependentUpon>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="showKoleksi.resx">
       <DependentUpon>showKoleksi.vb</DependentUpon>

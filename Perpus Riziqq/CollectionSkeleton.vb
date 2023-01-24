@@ -14,6 +14,7 @@ Public Class CollectionSkeleton
     Private password As String = ""
     Private database As String = "perpustakaan"
 
+    Private idKoleksi As String
     Private foto As String
     Private nama As String
     Private jenisKoleksi As String
@@ -39,7 +40,8 @@ Public Class CollectionSkeleton
                                  CREATED_AT AS 'TANGGAL MASUK',
                                  LOKASI_RAK AS 'LOKASI RAK',
                                  STOCK AS 'STOCK',
-                                 BAHASA AS 'BAHASA'
+                                 BAHASA AS 'BAHASA',
+                                 KATEGORI AS 'KATEGORI'
                                  FROM KOLEKSI "
         sqlRead = sqlCommand.ExecuteReader
 
@@ -50,10 +52,10 @@ Public Class CollectionSkeleton
     End Function
 
     Public Function AddDataKoleksiDatabase()
-        dbConn.ConnectionString = "server = " + server + ";" + "user id=" _
-        + username + ";" + "password=" + ";" + "database=" + database
-
+        Dim kategoriJoin = String.Join(", ", kategori.ToArray())
         Try
+            dbConn.ConnectionString = "server = " + server + ";" + "user id=" _
+                + username + ";" + "password=" + ";" + "database=" + database
             dbConn.Open()
             sqlCommand.Connection = dbConn
             sqlQuery = "INSERT INTO KOLEKSI 
@@ -68,12 +70,12 @@ Public Class CollectionSkeleton
                         '" & lokasiRak & "',
                         '" & stock & "',
                         '" & bahasa & "',
-                        '" & kategori.ToString & "',
+                        '" & kategoriJoin & "',
                         '" & penerbit & "'
                         )"
+
             sqlCommand = New MySqlCommand(sqlQuery, dbConn)
             sqlRead = sqlCommand.ExecuteReader
-            dbConn.Close()
 
             sqlRead.Close()
             dbConn.Close()
@@ -106,7 +108,7 @@ Public Class CollectionSkeleton
                                     bahasa,
                                     kategori
                                     FROM koleksi 
-                                    WHERE id ='" & Id & "'"
+                                    WHERE id_koleksi ='" & Id & "'"
         sqlRead = sqlCommand.ExecuteReader
 
         While sqlRead.Read
@@ -124,13 +126,14 @@ Public Class CollectionSkeleton
             result.Add(sqlRead.GetString(11).ToString())
         End While
 
+        
+
         sqlRead.Close()
         dbConn.Close()
         Return result
     End Function
 
-    Public Function UpdateDataKoleksiByIdDatabase(Id As Integer, data As List(Of Object))
-        data(10) = data(9).ToString()
+    Public Function UpdateDataKoleksiByIdDatabase(Id As Integer, data As List(Of String))
 
         dbConn.ConnectionString = "server =" + server + ";" + "user id=" _
                                   + username + ";" + "password=" + password + ";" _
@@ -148,9 +151,9 @@ Public Class CollectionSkeleton
                         "STOCK='" & data(6) & "', " &
                         "BAHASA='" & data(7) & "', " &
                         "KATEGORI='" & data(8) & "', " &
-                        "PENERBIT='" & data(9) & "', " &
-                        "UPDATED_AT='" & data(10) & "', " &
+                        "PENERBIT='" & data(9) & "' " &
                         "WHERE ID_KOLEKSI='" & Id & "'"
+
             sqlCommand = New MySqlCommand(sqlQuery, dbConn)
             sqlRead = sqlCommand.ExecuteReader
             dbConn.Close()
@@ -158,11 +161,45 @@ Public Class CollectionSkeleton
             sqlRead.Close()
             dbConn.Close()
         Catch ex As Exception
+            Debug.WriteLine(ex.Message)
             Return ex.Message
         Finally
             dbConn.Dispose()
         End Try
     End Function
+
+    Public Function delete(id As String)
+        Try
+            dbConn.ConnectionString = "server = " + server + ";" + "user id=" _
+                + username + ";" + "password=" + ";" + "database=" + database
+            dbConn.Open()
+            sqlCommand.Connection = dbConn
+            sqlQuery = "DELETE FROM koleksi WHERE id_koleksi =" + id
+
+            sqlCommand = New MySqlCommand(sqlQuery, dbConn)
+            sqlRead = sqlCommand.ExecuteReader
+
+            sqlRead.Close()
+            dbConn.Close()
+
+            Return True
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            dbConn.Dispose()
+        End Try
+    End Function
+
+    Public Property GSID()
+        Get
+            Return idKoleksi
+        End Get
+        Set(value)
+            idKoleksi = value
+        End Set
+    End Property
+
     Public Property GSFoto() As String
         Get
             Return foto

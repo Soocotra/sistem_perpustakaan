@@ -58,7 +58,7 @@
         koleksi.AddDataKoleksiDatabase()
         main_page.ListCollection.Add(koleksi)
         showKoleksi.Show()
-        main_page.showLBItems()
+        main_page.ReloadDataTableDatabase()
         Me.Close()
 
 

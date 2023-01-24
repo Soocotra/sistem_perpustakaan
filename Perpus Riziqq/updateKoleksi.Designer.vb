@@ -47,7 +47,7 @@ Partial Class updateKoleksi
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.BtnTambahGambar = New System.Windows.Forms.Button()
-        Me.BtnTambahKoleksi = New System.Windows.Forms.Button()
+        Me.BtnEditKoleksi = New System.Windows.Forms.Button()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.PicFoto = New System.Windows.Forms.PictureBox()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -62,7 +62,7 @@ Partial Class updateKoleksi
         Me.CheckSains.Location = New System.Drawing.Point(8, 23)
         Me.CheckSains.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckSains.Name = "CheckSains"
-        Me.CheckSains.Size = New System.Drawing.Size(65, 21)
+        Me.CheckSains.Size = New System.Drawing.Size(63, 20)
         Me.CheckSains.TabIndex = 0
         Me.CheckSains.Text = "Sains"
         Me.CheckSains.UseVisualStyleBackColor = True
@@ -81,7 +81,7 @@ Partial Class updateKoleksi
         Me.Label8.Location = New System.Drawing.Point(321, 338)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(60, 17)
+        Me.Label8.Size = New System.Drawing.Size(58, 16)
         Me.Label8.TabIndex = 44
         Me.Label8.Text = "Tanggal"
         '
@@ -116,7 +116,7 @@ Partial Class updateKoleksi
         Me.CheckBudaya.Location = New System.Drawing.Point(8, 107)
         Me.CheckBudaya.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckBudaya.Name = "CheckBudaya"
-        Me.CheckBudaya.Size = New System.Drawing.Size(78, 21)
+        Me.CheckBudaya.Size = New System.Drawing.Size(76, 20)
         Me.CheckBudaya.TabIndex = 3
         Me.CheckBudaya.Text = "Budaya"
         Me.CheckBudaya.UseVisualStyleBackColor = True
@@ -127,7 +127,7 @@ Partial Class updateKoleksi
         Me.CheckTeknologi.Location = New System.Drawing.Point(8, 79)
         Me.CheckTeknologi.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckTeknologi.Name = "CheckTeknologi"
-        Me.CheckTeknologi.Size = New System.Drawing.Size(92, 21)
+        Me.CheckTeknologi.Size = New System.Drawing.Size(90, 20)
         Me.CheckTeknologi.TabIndex = 2
         Me.CheckTeknologi.Text = "Teknologi"
         Me.CheckTeknologi.UseVisualStyleBackColor = True
@@ -138,7 +138,7 @@ Partial Class updateKoleksi
         Me.CheckSosial.Location = New System.Drawing.Point(8, 50)
         Me.CheckSosial.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckSosial.Name = "CheckSosial"
-        Me.CheckSosial.Size = New System.Drawing.Size(68, 21)
+        Me.CheckSosial.Size = New System.Drawing.Size(67, 20)
         Me.CheckSosial.TabIndex = 1
         Me.CheckSosial.Text = "Sosial"
         Me.CheckSosial.UseVisualStyleBackColor = True
@@ -162,7 +162,7 @@ Partial Class updateKoleksi
         Me.RBEnglish.Location = New System.Drawing.Point(8, 65)
         Me.RBEnglish.Margin = New System.Windows.Forms.Padding(4)
         Me.RBEnglish.Name = "RBEnglish"
-        Me.RBEnglish.Size = New System.Drawing.Size(75, 21)
+        Me.RBEnglish.Size = New System.Drawing.Size(72, 20)
         Me.RBEnglish.TabIndex = 21
         Me.RBEnglish.TabStop = True
         Me.RBEnglish.Text = "English"
@@ -174,7 +174,7 @@ Partial Class updateKoleksi
         Me.RBBahasa.Location = New System.Drawing.Point(8, 23)
         Me.RBBahasa.Margin = New System.Windows.Forms.Padding(4)
         Me.RBBahasa.Name = "RBBahasa"
-        Me.RBBahasa.Size = New System.Drawing.Size(142, 21)
+        Me.RBBahasa.Size = New System.Drawing.Size(137, 20)
         Me.RBBahasa.TabIndex = 20
         Me.RBBahasa.TabStop = True
         Me.RBBahasa.Text = "Bahasa Indonesia"
@@ -235,7 +235,7 @@ Partial Class updateKoleksi
         Me.Label7.Location = New System.Drawing.Point(321, 435)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(43, 17)
+        Me.Label7.Size = New System.Drawing.Size(41, 16)
         Me.Label7.TabIndex = 35
         Me.Label7.Text = "Stock"
         '
@@ -245,7 +245,7 @@ Partial Class updateKoleksi
         Me.Label6.Location = New System.Drawing.Point(321, 376)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(78, 17)
+        Me.Label6.Size = New System.Drawing.Size(75, 16)
         Me.Label6.TabIndex = 34
         Me.Label6.Text = "Lokasi Rak"
         '
@@ -255,7 +255,7 @@ Partial Class updateKoleksi
         Me.Label5.Location = New System.Drawing.Point(321, 292)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(90, 17)
+        Me.Label5.Size = New System.Drawing.Size(83, 16)
         Me.Label5.TabIndex = 33
         Me.Label5.Text = "Tahun Terbit"
         '
@@ -265,7 +265,7 @@ Partial Class updateKoleksi
         Me.Label4.Location = New System.Drawing.Point(321, 245)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(61, 17)
+        Me.Label4.Size = New System.Drawing.Size(57, 16)
         Me.Label4.TabIndex = 32
         Me.Label4.Text = "Penerbit"
         '
@@ -275,7 +275,7 @@ Partial Class updateKoleksi
         Me.Label3.Location = New System.Drawing.Point(321, 148)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(66, 17)
+        Me.Label3.Size = New System.Drawing.Size(64, 16)
         Me.Label3.TabIndex = 31
         Me.Label3.Text = "Deskripsi"
         '
@@ -285,7 +285,7 @@ Partial Class updateKoleksi
         Me.Label2.Location = New System.Drawing.Point(321, 94)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(90, 17)
+        Me.Label2.Size = New System.Drawing.Size(86, 16)
         Me.Label2.TabIndex = 30
         Me.Label2.Text = "Jenis Koleksi"
         '
@@ -295,7 +295,7 @@ Partial Class updateKoleksi
         Me.Label1.Location = New System.Drawing.Point(321, 34)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(94, 17)
+        Me.Label1.Size = New System.Drawing.Size(91, 16)
         Me.Label1.TabIndex = 29
         Me.Label1.Text = "Nama Koleksi"
         '
@@ -309,15 +309,15 @@ Partial Class updateKoleksi
         Me.BtnTambahGambar.Text = "Tambah Gambar"
         Me.BtnTambahGambar.UseVisualStyleBackColor = True
         '
-        'BtnTambahKoleksi
+        'BtnEditKoleksi
         '
-        Me.BtnTambahKoleksi.Location = New System.Drawing.Point(435, 665)
-        Me.BtnTambahKoleksi.Margin = New System.Windows.Forms.Padding(4)
-        Me.BtnTambahKoleksi.Name = "BtnTambahKoleksi"
-        Me.BtnTambahKoleksi.Size = New System.Drawing.Size(179, 44)
-        Me.BtnTambahKoleksi.TabIndex = 26
-        Me.BtnTambahKoleksi.Text = "Tambah Koleksi"
-        Me.BtnTambahKoleksi.UseVisualStyleBackColor = True
+        Me.BtnEditKoleksi.Location = New System.Drawing.Point(435, 665)
+        Me.BtnEditKoleksi.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnEditKoleksi.Name = "BtnEditKoleksi"
+        Me.BtnEditKoleksi.Size = New System.Drawing.Size(179, 44)
+        Me.BtnEditKoleksi.TabIndex = 26
+        Me.BtnEditKoleksi.Text = "Edit Koleksi"
+        Me.BtnEditKoleksi.UseVisualStyleBackColor = True
         '
         'OpenFileDialog1
         '
@@ -367,7 +367,7 @@ Partial Class updateKoleksi
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.BtnTambahGambar)
-        Me.Controls.Add(Me.BtnTambahKoleksi)
+        Me.Controls.Add(Me.BtnEditKoleksi)
         Me.Controls.Add(Me.PicFoto)
         Me.Name = "updateKoleksi"
         Me.Text = "update"
@@ -405,7 +405,7 @@ Partial Class updateKoleksi
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents BtnTambahGambar As Button
-    Friend WithEvents BtnTambahKoleksi As Button
+    Friend WithEvents BtnEditKoleksi As Button
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents PicFoto As PictureBox
     Friend WithEvents Label9 As Label

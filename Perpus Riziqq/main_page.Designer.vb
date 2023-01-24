@@ -44,7 +44,7 @@ Partial Class main_page
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.KoleksiToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1709, 30)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1769, 28)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -52,7 +52,7 @@ Partial Class main_page
         '
         Me.KoleksiToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BtnTambahKoleksi})
         Me.KoleksiToolStripMenuItem.Name = "KoleksiToolStripMenuItem"
-        Me.KoleksiToolStripMenuItem.Size = New System.Drawing.Size(70, 26)
+        Me.KoleksiToolStripMenuItem.Size = New System.Drawing.Size(70, 24)
         Me.KoleksiToolStripMenuItem.Text = "Koleksi"
         '
         'BtnTambahKoleksi
@@ -104,18 +104,24 @@ Partial Class main_page
         Me.Tabel.AllowUserToAddRows = False
         Me.Tabel.AllowUserToDeleteRows = False
         Me.Tabel.AllowUserToOrderColumns = True
+        Me.Tabel.AllowUserToResizeColumns = False
+        Me.Tabel.AllowUserToResizeRows = False
+        Me.Tabel.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.Tabel.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders
         Me.Tabel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.Tabel.Location = New System.Drawing.Point(377, 91)
+        Me.Tabel.Location = New System.Drawing.Point(356, 91)
         Me.Tabel.Margin = New System.Windows.Forms.Padding(4)
+        Me.Tabel.MultiSelect = False
         Me.Tabel.Name = "Tabel"
         Me.Tabel.ReadOnly = True
         Me.Tabel.RowHeadersWidth = 51
+        Me.Tabel.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.Tabel.Size = New System.Drawing.Size(1303, 548)
         Me.Tabel.TabIndex = 6
         '
         'BtnRemove
         '
-        Me.BtnRemove.Location = New System.Drawing.Point(1605, 61)
+        Me.BtnRemove.Location = New System.Drawing.Point(518, 61)
         Me.BtnRemove.Name = "BtnRemove"
         Me.BtnRemove.Size = New System.Drawing.Size(75, 23)
         Me.BtnRemove.TabIndex = 8
@@ -124,7 +130,7 @@ Partial Class main_page
         '
         'BtnSelect
         '
-        Me.BtnSelect.Location = New System.Drawing.Point(1524, 61)
+        Me.BtnSelect.Location = New System.Drawing.Point(437, 61)
         Me.BtnSelect.Name = "BtnSelect"
         Me.BtnSelect.Size = New System.Drawing.Size(75, 23)
         Me.BtnSelect.TabIndex = 9
@@ -133,7 +139,7 @@ Partial Class main_page
         '
         'BtnUpdate
         '
-        Me.BtnUpdate.Location = New System.Drawing.Point(1443, 61)
+        Me.BtnUpdate.Location = New System.Drawing.Point(356, 61)
         Me.BtnUpdate.Name = "BtnUpdate"
         Me.BtnUpdate.Size = New System.Drawing.Size(75, 23)
         Me.BtnUpdate.TabIndex = 10
@@ -144,7 +150,7 @@ Partial Class main_page
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1709, 675)
+        Me.ClientSize = New System.Drawing.Size(1769, 675)
         Me.Controls.Add(Me.BtnUpdate)
         Me.Controls.Add(Me.BtnSelect)
         Me.Controls.Add(Me.BtnRemove)
